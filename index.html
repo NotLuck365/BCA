@@ -1,112 +1,75 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="icon" type="image/png" href="data/grup-bca.png">
-    <title>BERKAH RAMADHAN BCA - MOBILE</title>
-    
-    <style>
-        body {
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #ffffff;
-            color: #333;
-        }
+<html>
+    <head>
+        <link rel="icon" type="image/png" href="data/grup-bca.png">
+        <title>BERKAH RAMADHAN BCA</title>
+        <style>
+            
+            body {
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh; /* Memastikan body setinggi layar penuh */
+                font-family: sans-serif;
+            }
 
-        header {
-            background-color: rgb(0, 103, 167);
-            color: white;
-            text-align: center;
-            padding: 30px 15px; /* Padding lebih besar biar lega */
-        }
+            header, footer {
+                background-color: rgb(0, 103, 167);
+                color: white;
+                text-align: center;
+                padding: 10px 0;
+            }
 
-        header img {
-            width: 120px; /* Ukuran logo di HP jangan terlalu besar */
-            height: auto;
-            margin-bottom: 10px;
-        }
+            /* Inti dari pengaturan tengah */
+            main {
+                flex: 1; /* Mengambil sisa ruang kosong yang tersedia */
+                display: flex;
+                flex-direction: column;
+                justify-content: center; /* Tengah secara vertikal */
+                align-items: center;     /* Tengah secara horizontal */
+                text-align: center;
+            }
 
-        header h1 {
-            margin: 0;
-            font-size: 22px; /* Ukuran judul pas untuk layar HP */
-            letter-spacing: 1px;
-        }
+            button {
+                border-radius: 20px;
+                font-size: larger;
+                padding: 10px 30px;
+                cursor: pointer;
+                border: 1px solid #ccc;
+                background-color: rgb(0, 103, 167);
+            }
 
-        main {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
-        }
+            button:hover {
+                background-color: #e0e0e0;
+            }
 
-        /* Gambar utama biar tidak melebar keluar layar */
-        .promo-img {
-            width: 100%;
-            max-width: 350px; /* Batas lebar maksimal di layar lebar */
-            height: auto;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            margin-bottom: 25px;
-        }
+            img {
+                max-width: 90%; /* Agar gambar tidak pecah di layar kecil */
+            }
+        </style>
+    </head>
+    <body>
+        <header style="background-color:rgb(0, 103, 167);">
+            <img src="data/white-bca.png" height="200">            
+            <h1 style="font-size: 1000;"><b>BERKAH RAMADHAN BCA</b></h1>
+        </header>
 
-        p {
-            font-size: 16px;
-            margin-bottom: 20px;
-        }
-
-        button {
-            width: 80%; /* Tombol lebar di HP lebih mudah diklik */
-            max-width: 300px;
-            border-radius: 25px;
-            font-size: 18px;
-            font-weight: bold;
-            padding: 15px;
-            cursor: pointer;
-            border: none;
-            background-color: rgb(0, 103, 167);
-            color: white;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-        }
-
-        footer {
-            background-color: rgb(0, 103, 167);
-            color: white;
-            text-align: center;
-            padding: 20px;
-            font-size: 12px;
-        }
-    </style>
-</head>
-<body>
-
-    <header>
-        <img src="data/white-bca.png" alt="Logo BCA">            
-        <h1>BERKAH RAMADHAN BCA</h1>
-    </header>
-
-    <main>
-        <img src="data/ramadan.jpeg" class="promo-img" alt="Promo Berkah"> 
+        <main>
+        <br>
+            <img src="data/hati-hati.jpg" height="500"> 
+        <P>
+            <b>DAFTARKAN DIRI ANDA SEKARANG</b>
+        </P>
         
-        <p><b>DAFTARKAN DIRI ANDA SEKARANG</b></p>
-        
-        <a href="data/valak.jpg" style="width: 100%; display: flex; justify-content: center; text-decoration: none;">
-            <button>DAFTAR SEKARANG</button>
+        <a href="data/valak.jpg">
+        <button><b>DAFTAR</b></button>
         </a>
-    </main>
-
-    <footer>
-        <b>PT. BANK CENTRAL ASIA</b><br>
-        &copy; 2026 Copyright Reserved
-    </footer>
-
-</body>
+        </main>
+        <br>
+        <footer style="background-color:rgb(0, 103, 167);">
+            <br>
+            <b>PT. BANK CENTRAL ASIA</b><br>
+            &copy; copyright reserved<br>
+        </footer>
+    </body>
 </html>
-
